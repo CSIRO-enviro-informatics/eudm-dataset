@@ -1,0 +1,65 @@
+# baseURI: http://example.org/eudm/license1
+# imports: http://linked.data.gov.au/def/eudm-metadata
+# prefix: license1
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix license1: <http://example.org/eudm/license1#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/eudm/license1>
+  rdf:type owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/eudm-metadata> ;
+.
+license1:Distribution_0p
+  rdf:type eudm:Distribution ;
+  rdfs:label "Distro with no permission" ;
+.
+license1:Distribution_1p
+  rdf:type eudm:Distribution ;
+  rdfs:label "Distro with 1 permission" ;
+  odrl:hasPolicy license1:LicenseP ;
+.
+license1:License0
+  rdf:type odrl:Policy ;
+  rdfs:label "Invalid license with no obligation, permission or prohibition" ;
+.
+license1:LicenseH
+  rdf:type odrl:Policy ;
+  rdfs:label "Basic license with one prohibition" ;
+  odrl:prohibition <http://example.org/Prohibition1> ;
+.
+license1:LicenseO
+  rdf:type odrl:Policy ;
+  rdfs:label "Basic license with one obligation" ;
+  odrl:obligation <http://example.org/Duty1> ;
+.
+license1:LicenseP
+  rdf:type odrl:Policy ;
+  rdfs:label "Basic license with one permission" ;
+  odrl:permission <http://example.org/Permission1> ;
+.
