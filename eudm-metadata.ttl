@@ -7,11 +7,13 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
+@prefix lic: <http://test.linked.data.gov.au/license/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -52,13 +54,21 @@ eudm:Dataset
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty eudm:hasAGIFTclassification ;
+      owl:onProperty eudm:hasEUDMcategory ;
     ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-      owl:onProperty eudm:hasFieldOfResearch ;
+.
+eudm:DatasetShape
+  rdf:type sh:NodeShape ;
+  rdfs:label "An EUDM dataset" ;
+  sh:property [
+      sh:path eudm:hasEUDMcategory ;
+      sh:class eudm:EUDMcategory ;
+      sh:description "classified/tagged with at least one EUDM category" ;
+      sh:minCount 1 ;
+      sh:name "has EUDM category" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
     ] ;
+  sh:targetClass eudm:Dataset ;
 .
 eudm:Distribution
   rdf:type owl:Class ;
@@ -75,12 +85,18 @@ eudm:DistributionShape
   rdfs:label "An EUDM dataset distribution" ;
   sh:property [
       sh:path odrl:hasPolicy ;
+      sh:class lic:AU-license ;
       sh:description "at least one policy" ;
       sh:minCount 1 ;
       sh:name "has policy" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
     ] ;
   sh:targetClass eudm:Distribution ;
+.
+eudm:EUDMcategory
+  rdf:type owl:Class ;
+  rdfs:label "EUDM Category" ;
+  rdfs:subClassOf skos:Concept ;
 .
 eudm:PolicyShape
   rdf:type sh:NodeShape ;
@@ -102,13 +118,35 @@ eudm:PolicyShape
         sh:minCount 1 ;
       ]
     ) ;
+  sh:property [
+      sh:path odrl:permission ;
+      sh:class lic:AU-permission ;
+      sh:description "Must have an AU-government permission" ;
+      sh:minCount 1 ;
+      sh:name "permission" ;
+    ] ;
   sh:targetClass odrl:Policy ;
 .
 eudm:hasAGIFTclassification
   rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dcat:theme ;
 .
+eudm:hasEUDMcategory
+  rdf:type owl:ObjectProperty ;
+  rdfs:range eudm:EUDMcategory ;
+  rdfs:subPropertyOf dcat:theme ;
+.
 eudm:hasFieldOfResearch
   rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dcat:theme ;
+.
+lic:AU-license
+  rdf:type owl:Class ;
+  rdfs:label "Australian Government Data License" ;
+  rdfs:subClassOf odrl:Policy ;
+.
+lic:AU-permission
+  rdf:type owl:Class ;
+  rdfs:label "AU government permission statement" ;
+  rdfs:subClassOf odrl:Permission ;
 .

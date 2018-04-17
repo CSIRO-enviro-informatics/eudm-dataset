@@ -1,0 +1,41 @@
+# baseURI: http://example.org/eudm/classifier1
+# imports: http://linked.data.gov.au/def/eudm-metadata
+# imports: http://topbraid.org/skos.shapes
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: classifier1
+
+@prefix classifier1: <http://example.org/eudm/classifier1#> .
+@prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/eudm/classifier1>
+  rdf:type owl:Ontology ;
+  owl:imports <http://linked.data.gov.au/def/eudm-metadata> ;
+  owl:imports <http://topbraid.org/skos.shapes> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+classifier1:Dataset_1
+  rdf:type eudm:Dataset ;
+  eudm:hasEUDMcategory [
+      rdf:type eudm:EUDMcategory ;
+      skos:prefLabel "Electricity" ;
+    ] ;
+  rdfs:label "Dataset with classifiers" ;
+.
+classifier1:Dataset_2
+  rdf:type eudm:Dataset ;
+  rdfs:label "Dataset without classifiers" ;
+.
+classifier1:Dataset_3
+  rdf:type eudm:Dataset ;
+  eudm:hasEUDMcategory [
+      rdf:type skos:Concept ;
+      skos:prefLabel "Electricity" ;
+    ] ;
+  rdfs:label "Dataset with classifier wrong type" ;
+.
