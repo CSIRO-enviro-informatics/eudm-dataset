@@ -1,2 +1,2 @@
-# eudm-metadata
-Metadata model for EUDM datasets
+# EUDM Profile
+Profile of metadata standards for EUDM datasets
