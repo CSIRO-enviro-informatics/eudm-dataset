@@ -1,0 +1,298 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "description" : "at least one permission",
+    "sh:minCount" : 1,
+    "path" : "odrl:permission"
+  }, {
+    "@id" : "_:b1",
+    "class" : "eudm:EUDMcategory",
+    "description" : "classified/tagged with at least one EUDM category",
+    "sh:minCount" : 1,
+    "name" : "has EUDM category",
+    "nodeKind" : "sh:BlankNodeOrIRI",
+    "path" : "eudm:hasEUDMcategory"
+  }, {
+    "@id" : "_:b11",
+    "description" : "at least one prohibition",
+    "sh:minCount" : 1,
+    "path" : "odrl:prohibition"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "eudm:hasEUDMcategory"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "odrl:hasPolicy"
+  }, {
+    "@id" : "_:b4",
+    "class" : "lic:AU-license",
+    "description" : "at least one policy",
+    "sh:minCount" : 1,
+    "name" : "has policy",
+    "nodeKind" : "sh:BlankNodeOrIRI",
+    "path" : "odrl:hasPolicy"
+  }, {
+    "@id" : "_:b5",
+    "description" : "at least one obligation",
+    "sh:minCount" : 1,
+    "path" : "odrl:obligation"
+  }, {
+    "@id" : "_:b8",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "dct:title"
+  }, {
+    "@id" : "_:b9",
+    "class" : "lic:AU-permission",
+    "description" : "Must have an AU-government permission",
+    "sh:minCount" : 1,
+    "name" : "permission",
+    "path" : "odrl:permission"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/eudm-metadata",
+    "@type" : "owl:Ontology",
+    "contributor" : {
+      "@language" : "en",
+      "@value" : "Nicholas Car"
+    },
+    "creator" : {
+      "@language" : "en",
+      "@value" : "Simon Cox"
+    },
+    "http://purl.org/dc/elements/1.1/publisher" : {
+      "@language" : "en",
+      "@value" : "Commonwealth Scientific and Industrial Research Organisation"
+    },
+    "dct:contributor" : {
+      "@id" : "http://orcid.org/0000-0002-8742-7730"
+    },
+    "created" : "2018-04-16",
+    "dct:creator" : {
+      "@id" : "http://orcid.org/0000-0002-3884-3420"
+    },
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2018-04-16",
+    "publisher" : "http://csiro.au",
+    "rights" : {
+      "@language" : "en",
+      "@value" : "(c) CSIRO 2018"
+    },
+    "preferredNamespacePrefix" : "eudm",
+    "preferredNamespaceUri" : "http://linked.data.gov.au/def/eudm-metadata",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A test version of the Energy Use Dataset Metadata Model"
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Energy Use Dataset Metadata Model"
+    },
+    "seeAlso" : "https://github.com/CSIRO-enviro-informatics/eudm-metadata",
+    "imports" : [ "http://www.w3.org/ns/dcat", "http://www.w3.org/ns/odrl/2/", "http://datashapes.org/dash" ],
+    "versionIRI" : "http://linked.data.gov.au/def/eudm-metadata/1/",
+    "versionInfo" : "1"
+  }, {
+    "@id" : "eudm:Dataset",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A Dataset, according to the EUDM"
+    },
+    "label" : {
+      "@language" : "en",
+      "@value" : "Dataset"
+    },
+    "subClassOf" : [ "_:b2", "_:b8", "dcat:Dataset" ]
+  }, {
+    "@id" : "eudm:DatasetShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM dataset",
+    "property" : "_:b1",
+    "targetClass" : "eudm:Dataset"
+  }, {
+    "@id" : "eudm:Distribution",
+    "@type" : "owl:Class",
+    "label" : "An EUDM dataset distribution",
+    "subClassOf" : [ "_:b3", "dcat:Distribution" ]
+  }, {
+    "@id" : "eudm:DistributionShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM dataset distribution",
+    "property" : "_:b4",
+    "targetClass" : "eudm:Distribution"
+  }, {
+    "@id" : "eudm:EUDMcategory",
+    "@type" : "owl:Class",
+    "label" : "EUDM Category",
+    "subClassOf" : "skos:Concept"
+  }, {
+    "@id" : "eudm:PolicyShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM policy",
+    "or" : {
+      "@list" : [ "_:b5", "_:b0", "_:b11" ]
+    },
+    "property" : "_:b9",
+    "targetClass" : "odrl:Policy"
+  }, {
+    "@id" : "eudm:hasAGIFTclassification",
+    "@type" : "owl:ObjectProperty",
+    "subPropertyOf" : "dcat:theme"
+  }, {
+    "@id" : "eudm:hasEUDMcategory",
+    "@type" : "owl:ObjectProperty",
+    "range" : "eudm:EUDMcategory",
+    "subPropertyOf" : "dcat:theme"
+  }, {
+    "@id" : "eudm:hasFieldOfResearch",
+    "@type" : "owl:ObjectProperty",
+    "subPropertyOf" : "dcat:theme"
+  }, {
+    "@id" : "lic:AU-license",
+    "@type" : "owl:Class",
+    "label" : "Australian Government Data License",
+    "subClassOf" : "odrl:Policy"
+  }, {
+    "@id" : "lic:AU-permission",
+    "@type" : "owl:Class",
+    "label" : "AU government permission statement",
+    "subClassOf" : "odrl:Permission"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/shacl#or",
+      "@type" : "@id"
+    },
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "lic" : "http://test.linked.data.gov.au/license/",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "eudm" : "http://linked.data.gov.au/def/eudm-metadata#",
+    "xml" : "http://www.w3.org/XML/1998/namespace",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "odrl" : "http://www.w3.org/ns/odrl/2/",
+    "vann" : "http://purl.org/vocab/vann/"
+  }
+}
