@@ -1,0 +1,251 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "eudm": "http://linked.data.gov.au/def/eudm-metadata#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "vann": "http://purl.org/vocab/vann/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "eudm:hasAGIFTclassification",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "dcat:theme"
+      }
+    },
+    {
+      "@id": "_:ub49bL75C15",
+      "sh:description": "at least one policy",
+      "sh:minCount": 1,
+      "sh:name": "has policy",
+      "sh:nodeKind": {
+        "@id": "sh:BlankNodeOrIRI"
+      },
+      "sh:path": {
+        "@id": "odrl:hasPolicy"
+      }
+    },
+    {
+      "@id": "_:ub49bL93C7",
+      "sh:description": "at least one permission",
+      "sh:minCount": 1,
+      "sh:path": {
+        "@id": "odrl:permission"
+      }
+    },
+    {
+      "@id": "eudm:Distribution",
+      "@type": "owl:Class",
+      "rdfs:label": "An EUDM dataset distribution",
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub49bL66C19"
+        },
+        {
+          "@id": "dcat:Distribution"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub49bL51C19",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "eudm:hasAGIFTclassification"
+      }
+    },
+    {
+      "@id": "_:ub49bL46C19",
+      "@type": "owl:Restriction",
+      "owl:cardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "dcterms:title"
+      }
+    },
+    {
+      "@id": "_:ub49bL56C19",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "eudm:hasFieldOfResearch"
+      }
+    },
+    {
+      "@id": "_:ub49bL88C7",
+      "sh:description": "at least one obligation",
+      "sh:minCount": 1,
+      "sh:path": {
+        "@id": "odrl:obligation"
+      }
+    },
+    {
+      "@id": "eudm:hasFieldOfResearch",
+      "@type": "owl:ObjectProperty",
+      "rdfs:subPropertyOf": {
+        "@id": "dcat:theme"
+      }
+    },
+    {
+      "@id": "eudm:Dataset",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A Dataset, according to the EUDM"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dataset"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:ub49bL56C19"
+        },
+        {
+          "@id": "_:ub49bL46C19"
+        },
+        {
+          "@id": "dcat:Dataset"
+        },
+        {
+          "@id": "_:ub49bL51C19"
+        }
+      ]
+    },
+    {
+      "@id": "_:ub49bL98C7",
+      "sh:description": "at least one prohibition",
+      "sh:minCount": 1,
+      "sh:path": {
+        "@id": "odrl:prohibition"
+      }
+    },
+    {
+      "@id": "eudm:PolicyShape",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "An EUDM policy",
+      "sh:or": {
+        "@list": [
+          {
+            "@id": "_:ub49bL88C7"
+          },
+          {
+            "@id": "_:ub49bL93C7"
+          },
+          {
+            "@id": "_:ub49bL98C7"
+          }
+        ]
+      },
+      "sh:targetClass": {
+        "@id": "odrl:Policy"
+      }
+    },
+    {
+      "@id": "http://linked.data.gov.au/def/eudm-metadata",
+      "@type": "owl:Ontology",
+      "dc:contributor": {
+        "@language": "en",
+        "@value": "Nicholas Car"
+      },
+      "dc:creator": {
+        "@language": "en",
+        "@value": "Simon Cox"
+      },
+      "dc:publisher": {
+        "@language": "en",
+        "@value": "Commonwealth Scientific and Industrial Research Organisation"
+      },
+      "dcterms:contributor": {
+        "@id": "http://orcid.org/0000-0002-8742-7730"
+      },
+      "dcterms:created": {
+        "@type": "xsd:date",
+        "@value": "2018-04-16"
+      },
+      "dcterms:creator": {
+        "@id": "http://orcid.org/0000-0002-3884-3420"
+      },
+      "dcterms:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:modified": {
+        "@type": "xsd:date",
+        "@value": "2018-04-16"
+      },
+      "dcterms:publisher": {
+        "@id": "http://csiro.au"
+      },
+      "dcterms:rights": {
+        "@language": "en",
+        "@value": "(c) CSIRO 2018"
+      },
+      "owl:imports": [
+        {
+          "@id": "http://datashapes.org/dash"
+        },
+        {
+          "@id": "odrl:"
+        },
+        {
+          "@id": "http://www.w3.org/ns/dcat"
+        }
+      ],
+      "owl:versionIRI": {
+        "@id": "http://linked.data.gov.au/def/eudm-metadata/1/"
+      },
+      "owl:versionInfo": "1",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A test version of the Energy Use Dataset Metadata Model"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Energy Use Dataset Metadata Model"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://github.com/CSIRO-enviro-informatics/eudm-metadata"
+      },
+      "vann:preferredNamespacePrefix": "eudm",
+      "vann:preferredNamespaceUri": "http://linked.data.gov.au/def/eudm-metadata"
+    },
+    {
+      "@id": "eudm:DistributionShape",
+      "@type": "sh:NodeShape",
+      "rdfs:label": "An EUDM dataset distribution",
+      "sh:property": {
+        "@id": "_:ub49bL75C15"
+      },
+      "sh:targetClass": {
+        "@id": "eudm:Distribution"
+      }
+    },
+    {
+      "@id": "_:ub49bL66C19",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "odrl:hasPolicy"
+      }
+    }
+  ]
+}
