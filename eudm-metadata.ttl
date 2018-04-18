@@ -1,5 +1,6 @@
 # baseURI: http://linked.data.gov.au/def/eudm-metadata
 # imports: http://datashapes.org/dash
+# imports: http://purl.org/linked-data/registry
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/odrl/2/
 # prefix: eudm
@@ -36,6 +37,7 @@
   rdfs:label "Energy Use Dataset Metadata Model"@en ;
   rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/eudm-metadata> ;
   owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://purl.org/linked-data/registry> ;
   owl:imports <http://www.w3.org/ns/dcat> ;
   owl:imports odrl: ;
   owl:versionIRI <http://linked.data.gov.au/def/eudm-metadata/1/> ;
@@ -118,6 +120,12 @@ eudm:PolicyShape
         sh:minCount 1 ;
       ]
     ) ;
+  sh:property [
+      sh:path <http://purl.org/linked-data/registry#register> ;
+      sh:description "Must be a member of the AU License register" ;
+      sh:hasValue <http://test/linked.data.gov.au/license/> ;
+      sh:name "register" ;
+    ] ;
   sh:property [
       sh:path odrl:permission ;
       sh:class lic:AU-permission ;
