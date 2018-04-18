@@ -1,11 +1,13 @@
 # baseURI: http://example.org/eudm/classifier1
-# imports: http://linked.data.gov.au/def/eudm-metadata
-# imports: http://topbraid.org/skos.shapes
-# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://linked.data.gov.au/def/eudm-dataset-constraints
 # prefix: classifier1
 
 @prefix classifier1: <http://example.org/eudm/classifier1#> .
-@prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eudm: <http://linked.data.gov.au/def/eudm-dataset#> .
+@prefix lic: <http://test.linked.data.gov.au/license/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,10 +16,7 @@
 
 <http://example.org/eudm/classifier1>
   rdf:type owl:Ontology ;
-  owl:imports <http://linked.data.gov.au/def/eudm-metadata> ;
-  owl:imports <http://topbraid.org/skos.shapes> ;
-  owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:versionInfo "Created with TopBraid Composer" ;
+  owl:imports <http://linked.data.gov.au/def/eudm-dataset-constraints> ;
 .
 classifier1:Dataset_1
   rdf:type eudm:Dataset ;
@@ -37,5 +36,5 @@ classifier1:Dataset_3
       rdf:type skos:Concept ;
       skos:prefLabel "Electricity" ;
     ] ;
-  rdfs:label "Dataset with classifier wrong type" ;
+  rdfs:label "Dataset with classifier of wrong type" ;
 .
