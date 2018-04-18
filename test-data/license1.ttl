@@ -12,11 +12,13 @@
 @prefix dctype: <http://purl.org/dc/dcmitype/> .
 @prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lic: <http://test.linked.data.gov.au/license/> .
 @prefix license1: <http://example.org/eudm/license1#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -34,6 +36,27 @@
 <http://example.org/eudm/license1>
   rdf:type owl:Ontology ;
   owl:imports <http://linked.data.gov.au/def/eudm-metadata> ;
+.
+license1:AU-Permission_1
+  rdf:type lic:AU-permission ;
+  reg:register <http://test/linked.data.gov.au/permission> ;
+  rdfs:label "An Australian Government Permission" ;
+.
+license1:AU-license_1
+  rdf:type lic:AU-license ;
+  reg:register <http://test/linked.data.gov.au/license/> ;
+  rdfs:label "AU License 1" ;
+  odrl:permission license1:AU-Permission_1 ;
+.
+license1:Dataset_1
+  rdf:type eudm:Dataset ;
+  eudm:hasEUDMcategory [
+      rdf:type eudm:EUDMcategory ;
+      skos:prefLabel "Electricity" ;
+    ] ;
+  rdfs:label "Dataset with multiple distributions" ;
+  dcat:distribution license1:Distribution_0p ;
+  dcat:distribution license1:Distribution_1p ;
 .
 license1:Distribution_0p
   rdf:type eudm:Distribution ;
