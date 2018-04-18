@@ -1,5 +1,4 @@
-# baseURI: http://linked.data.gov.au/def/eudm-metadata
-# imports: http://datashapes.org/dash
+# baseURI: http://linked.data.gov.au/def/eudm-dataset
 # imports: http://purl.org/linked-data/registry
 # imports: http://www.w3.org/ns/dcat
 # imports: http://www.w3.org/ns/odrl/2/
@@ -7,7 +6,7 @@
 
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix eudm: <http://linked.data.gov.au/def/eudm-metadata#> .
+@prefix eudm: <http://linked.data.gov.au/def/eudm-dataset#> .
 @prefix lic: <http://test.linked.data.gov.au/license/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -19,7 +18,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://linked.data.gov.au/def/eudm-metadata>
+<http://linked.data.gov.au/def/eudm-dataset>
   rdf:type owl:Ontology ;
   <http://purl.org/dc/elements/1.1/contributor> "Nicholas Car"@en ;
   <http://purl.org/dc/elements/1.1/creator> "Simon Cox"@en ;
@@ -36,7 +35,6 @@
   rdfs:comment "A test version of the Energy Use Dataset Metadata Model"@en ;
   rdfs:label "Energy Use Dataset Metadata Model"@en ;
   rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/eudm-metadata> ;
-  owl:imports <http://datashapes.org/dash> ;
   owl:imports <http://purl.org/linked-data/registry> ;
   owl:imports <http://www.w3.org/ns/dcat> ;
   owl:imports odrl: ;
@@ -46,7 +44,7 @@
 eudm:Dataset
   rdf:type owl:Class ;
   rdfs:comment "A Dataset, according to the EUDM"@en ;
-  rdfs:label "Dataset"@en ;
+  rdfs:label "EUDM Dataset"@en ;
   rdfs:subClassOf dcat:Dataset ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
@@ -59,19 +57,6 @@ eudm:Dataset
       owl:onProperty eudm:hasEUDMcategory ;
     ] ;
 .
-eudm:DatasetShape
-  rdf:type sh:NodeShape ;
-  rdfs:label "An EUDM dataset" ;
-  sh:property [
-      sh:path eudm:hasEUDMcategory ;
-      sh:class eudm:EUDMcategory ;
-      sh:description "classified/tagged with at least one EUDM category" ;
-      sh:minCount 1 ;
-      sh:name "has EUDM category" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-    ] ;
-  sh:targetClass eudm:Dataset ;
-.
 eudm:Distribution
   rdf:type owl:Class ;
   rdfs:label "An EUDM dataset distribution" ;
@@ -82,58 +67,10 @@ eudm:Distribution
       owl:onProperty odrl:hasPolicy ;
     ] ;
 .
-eudm:DistributionShape
-  rdf:type sh:NodeShape ;
-  rdfs:label "An EUDM dataset distribution" ;
-  sh:property [
-      sh:path odrl:hasPolicy ;
-      sh:class lic:AU-license ;
-      sh:description "at least one policy" ;
-      sh:minCount 1 ;
-      sh:name "has policy" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-    ] ;
-  sh:targetClass eudm:Distribution ;
-.
 eudm:EUDMcategory
   rdf:type owl:Class ;
   rdfs:label "EUDM Category" ;
   rdfs:subClassOf skos:Concept ;
-.
-eudm:PolicyShape
-  rdf:type sh:NodeShape ;
-  rdfs:label "An EUDM policy" ;
-  sh:or (
-      [
-        sh:path odrl:obligation ;
-        sh:description "at least one obligation" ;
-        sh:minCount 1 ;
-      ]
-      [
-        sh:path odrl:permission ;
-        sh:description "at least one permission" ;
-        sh:minCount 1 ;
-      ]
-      [
-        sh:path odrl:prohibition ;
-        sh:description "at least one prohibition" ;
-        sh:minCount 1 ;
-      ]
-    ) ;
-  sh:property [
-      sh:path <http://purl.org/linked-data/registry#register> ;
-      sh:description "Must be a member of the AU License register" ;
-      sh:hasValue <http://test/linked.data.gov.au/license/> ;
-      sh:name "register" ;
-    ] ;
-  sh:property [
-      sh:path odrl:permission ;
-      sh:class lic:AU-permission ;
-      sh:description "Must have an AU-government permission" ;
-      sh:minCount 1 ;
-      sh:name "permission" ;
-    ] ;
-  sh:targetClass odrl:Policy ;
 .
 eudm:hasAGIFTclassification
   rdf:type owl:ObjectProperty ;
@@ -152,9 +89,47 @@ lic:AU-license
   rdf:type owl:Class ;
   rdfs:label "Australian Government Data License" ;
   rdfs:subClassOf odrl:Policy ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:hasValue <http://test/linked.data.gov.au/license/> ;
+      owl:onProperty <http://purl.org/linked-data/registry#register> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass lic:AU-permission ;
+      owl:onProperty odrl:permission ;
+    ] ;
 .
 lic:AU-permission
   rdf:type owl:Class ;
   rdfs:label "AU government permission statement" ;
   rdfs:subClassOf odrl:Permission ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:hasValue <http://test/linked.data.gov.au/permission/> ;
+      owl:onProperty <http://purl.org/linked-data/registry#register> ;
+    ] ;
+.
+odrl:Policy
+  rdfs:subClassOf [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          [
+            rdf:type owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty odrl:obligation ;
+          ]
+          [
+            rdf:type owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty odrl:permission ;
+          ]
+          [
+            rdf:type owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty odrl:prohibition ;
+          ]
+        ) ;
+    ] ;
 .

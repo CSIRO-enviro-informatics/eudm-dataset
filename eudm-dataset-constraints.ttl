@@ -1,0 +1,91 @@
+# baseURI: http://linked.data.gov.au/def/eudm-dataset-constraints
+# imports: http://datashapes.org/dash
+# imports: http://linked.data.gov.au/def/eudm-dataset
+# prefix: eudm-dataset-constraints
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eudm-dataset-constraints: <http://linked.data.gov.au/def/eudm-dataset-constraints#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://linked.data.gov.au/def/eudm-dataset-constraints>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://linked.data.gov.au/def/eudm-dataset> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+eudm-dataset-constraints:DatasetShape
+  rdf:type sh:NodeShape ;
+  rdfs:label "An EUDM dataset" ;
+  sh:property [
+      sh:path <http://linked.data.gov.au/def/eudm-dataset#hasEUDMcategory> ;
+      sh:class <http://linked.data.gov.au/def/eudm-dataset#EUDMcategory> ;
+      sh:description "Must be classified/tagged with at least one EUDM category" ;
+      sh:minCount 1 ;
+      sh:name "has EUDM category" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+    ] ;
+  sh:property [
+      sh:path dct:title ;
+      sh:description "Must have a title" ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+      sh:name "title" ;
+    ] ;
+  sh:targetClass <http://linked.data.gov.au/def/eudm-dataset#Dataset> ;
+.
+eudm-dataset-constraints:DistributionShape
+  rdf:type sh:NodeShape ;
+  rdfs:label "An EUDM dataset distribution" ;
+  sh:property [
+      sh:path odrl:hasPolicy ;
+      sh:class <http://test.linked.data.gov.au/license/AU-license> ;
+      sh:description "at least one policy" ;
+      sh:minCount 1 ;
+      sh:name "has policy" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+    ] ;
+  sh:targetClass <http://linked.data.gov.au/def/eudm-dataset#Distribution> ;
+.
+eudm-dataset-constraints:PolicyShape
+  rdf:type sh:NodeShape ;
+  rdfs:label "An EUDM policy" ;
+  sh:or (
+      [
+        sh:path odrl:obligation ;
+        sh:description "at least one obligation" ;
+        sh:minCount 1 ;
+      ]
+      [
+        sh:path odrl:permission ;
+        sh:description "at least one permission" ;
+        sh:minCount 1 ;
+      ]
+      [
+        sh:path odrl:prohibition ;
+        sh:description "at least one prohibition" ;
+        sh:minCount 1 ;
+      ]
+    ) ;
+  sh:property [
+      sh:path <http://purl.org/linked-data/registry#register> ;
+      sh:description "Must be a member of the AU License register" ;
+      sh:hasValue <http://test/linked.data.gov.au/license/> ;
+      sh:name "register" ;
+    ] ;
+  sh:property [
+      sh:path odrl:permission ;
+      sh:class <http://test.linked.data.gov.au/license/AU-permission> ;
+      sh:description "Must have an AU-government permission" ;
+      sh:minCount 1 ;
+      sh:name "permission" ;
+    ] ;
+  sh:targetClass odrl:Policy ;
+.
