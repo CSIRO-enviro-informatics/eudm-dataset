@@ -1,0 +1,75 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/address> a rdfs:Property ;
+    rdfs:label "Address"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Street or postal address for the agent."@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/contact> a rdfs:Property ;
+    rdfs:label "Contact"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Contact details for the agent. Can include an official title. Typically includes a phone number."@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/corporateName> a rdfs:Property ;
+    rdfs:label "Corporate Name"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The name of an organisation"@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/email> a rdfs:Property ;
+    rdfs:label "email"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "An email address for the agent."@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/jurisdiction> a rdfs:Property ;
+    rdfs:label "Jurisdiction"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The legal jurisdiction of the agent. Values for this component must be drawn from the AGLS Jurisdiction controlled list"@en-AU ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/personalName> a rdfs:Property ;
+    rdfs:label "Personal Name"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The name of a person"@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/sector> a rdfs:Property ;
+    rdfs:label "sector"@en-AU ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAgent/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Indicates whether the creator is from the government or non-government sector: 'government' and 'non-government' are the only allowable values NB The default value is 'government'"@en-AU ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAgent/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAgent/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Agent Syntax Encoding Scheme is a method for describing characteristics of agents in AGLS metadata descriptions.  Agents are people, organisations or instruments associated with resources. This schema defines the agent properties which can be described using the AGLS Agent scheme."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Agent Syntax Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2010-06-30" .

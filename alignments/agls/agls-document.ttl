@@ -1,0 +1,364 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/agenda> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Agenda" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A list of issues or activities used as a schedule or program for an event, conference, forum or meeting." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/checklist> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Checklist" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A list of items for convenience of comparison, verification or other checking purposes. See also 'index'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/contract> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Contract" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "An agreement between two or more parties for the delivery of a product, provision of a service, or management of a resource." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/dataset> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Dataset" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Structured information encoded in lists, tables, databases, etc., which will normally be in a format available for direct machine processing. (For example: spreadsheets, databases, GIS data, MIDI data.) Data may be numeric, spatial, spectral, statistical or structured text (including bibliographic data and database reports)." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/diary> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Diary" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Information arranged in calendar order documenting appointments and engagements. Use 'journal' for information arranged in calendar order documenting events, business or proceedings." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/digital_certificate> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Digital certificate" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any form of electronic code that describes or provides permission to access a resource." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/digital_signature> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Digital signature" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any form of electronic code used to simulate the security properties of a handwritten signature or to establish authenticity." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/elecronic_message> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Electronic message" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any electronically-mediated communication. This includes electronic mail, text messages, instant messages, electronic voice messages, electronic video messages and computer conferencing, but excludes scanned versions of written or printed messages." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/fact_sheet> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Fact sheet" ;
+    dcterms:created "2008-04-18" ;
+    dcterms:modified "2008-04-18" ;
+    rdfs:comment "A summary of information about a product, service, organisation, event or topic." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/form> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Form" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A structured solicitation of input from a user. (For example: comments, a survey, or an order.) For forms used to provide a service (for example: enquiries, registrations, or orders and purchases) use category=service and select an appropriate value from the list of service types instead." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/government_gazette> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Government Gazette" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Regular formal publication produced by government that may include vacancies, appointments, bulletins, notices, and legislative directives." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/guidelines> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Guidelines" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The primary purpose of the resource is to present factual information, advice or guidance about an organisation, event or service. Most general advisory pages on government websites will be of this document type. Use 'instruction' for resources that provide directions rather than information." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/homepage> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Homepage" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "The introductory page or major entry point for a site on the Internet. In most cases an organisation will have only one resource of this document type, except where there is likely to be a public perception that a distinct business unit stands alone as an organisational entity. Use other document types for lower level pages." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/image> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Image" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Deprecated. Use 'still image'.",
+        "The content is primarily a still visual representation other than text. Includes electronic and physical representations such as images, photographs, diagrams, maps and graphics. For digital representations of physical resources, use a more specific document type where possible. (For example: a scanned media release - use 'media release')." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/index> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Index" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any listing of items or entries provided for reference or navigation purposes, including an inventory, register or directory." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/instruction> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Instruction" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Resources in which the primary purpose is to provide instructions or directions. (For example: how to write a report; how to obtain a copy of a publication; how to register for a service.) Includes manuals, tutorials and quizzes. Use 'guidelines' for resources which have primarily informational content." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/instructional> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Instructional" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Deprecated. Use 'instruction'.",
+        "Resources in which the primary purpose is to provide instructions or directions. (For example: how to write a report; how to obtain a copy of a publication; how to register for a service.) Includes manuals, tutorials and quizzes. Use 'guidelines' for resources which have primarily informational content." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/journal> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Diary" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A record or register of events, business or proceedings. Use 'diary' for information arranged in calendar order documenting appointments and engagements." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/letter> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Letter" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A written or printed communication addressed to a person or a number of persons, including scanned versions of written or printed communications." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/log> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "log" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A chronological listing of actions, observations, data or transactions." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/media_release> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Media release" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Resource specifically designed to provide a brief public statement on an issue or event, via the mass media." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/meeting_minutes> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Meeting minutes" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A summary or record of proceedings of a meeting." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/memorandum> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Memorandum" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A note describing something to be remembered or acted upon in the future." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/metadata> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Metadata" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Data describing the context, content, structure and organisation of records and other information." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/minute> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Minute" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A form of correspondence acting as an official note or memorandum, usually recording an action or decision." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/moving_image> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Video" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A form of visual representation other than text, involving moving pictures, animation, video or film, with or without audio. For some resources it may be appropriate to use a combination of document types. (For example: video recording of an exhibition opening - specify document types as 'promotional; moving image'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/note_for_file> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Note for file" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A summary or record of a less formal meeting or ad hoc discussion (including by telephone)." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/other> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Other" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any document form not listed here." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/policy_statement> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Policy statement" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A major formal publication detailing a course or line of action adopted and pursued by the organisation. Includes public accountability documents such as corporate directions and other strategic plans. Use 'report' for resources that convey the results of an inquiry, account for activities or document speeches and presentations." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/presentation> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Presentation" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Any form of visual and/or verbal communication used to show or explain a topic to an audience." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/procedure> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Procedure" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A sequence of actions or instructions to be followed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/promotion> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Promotion" ;
+    dcterms:created "2008-05-01" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Descriptive or marketing information about an organisation, or material that promotes products, services, activities or collections. (For example: 'What's New' pages, brochures.) Includes announcements, but does not include media releases." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/promotional> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Promotional" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "Deprecated. Use 'promotion'.",
+        "Descriptive or marketing information about an organisation, or material that promotes products, services, activities or collections. (For example: 'What's New' pages, brochures.) Includes announcements." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/report> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Report" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource provides an account of organisational activity or a speech or presentation. Includes statements of the organisation's opinion, a decision or the results of an inquiry. Use 'dataset' for database reports." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/software> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Software" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Computer programs in source or compiled form which may be available for installation on another machine. For software that exists only to create an interactive environment use category=service and choose the service type 'communications forum' instead." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/sound> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Sound" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "The content is a primarily audio representation, which may be ambient, effects, music, narration or speech. For some audio resources it may be appropriate to use a combination of document types. For example: sound recording of a presentation - specify document types as 'presentation; sound'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/still_image> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Image" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "The content is primarily a still visual representation other than text. Includes electronic and physical representations such as images, photographs, diagrams, maps and graphics. For digital representations of physical resources, use a more specific document type where possible. (For example: a scanned media release - use 'media release; still image')." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-document/video> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Video" ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2008-05-01" ;
+    rdfs:comment "A form of visual representation other than text, involving moving images. Includes moving pictures, animation or film. For some video resources it may be appropriate to use a combination of document types. (For example: video recording of an exhibition opening - specify document types as 'promotional; video'.)",
+        "Deprecated. Use 'moving image'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/documentType/> ;
+    rdfs:seeAlso <http://www.naa.gov.au/recordkeeping/gov_online/agls/schemes/agls-document/> .
+
+<http://www.agls.gov.au/agls/terms/agls-document/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Document Vocabulary Encoding Scheme provides a general list of terms that can be used for describing document types for the documentType refinement for the Type element."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Document Vocabulary Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2010-06-30" .

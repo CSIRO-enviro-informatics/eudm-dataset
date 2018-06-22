@@ -1,0 +1,142 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/agentterms/corporateName> a rdf:Property ;
+    rdfs:label "Corporate Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Name of the responsible corporation or organisation."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/country> a rdf:Property ;
+    rdfs:label "Country"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Country of the postal address"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/email> a rdf:Property ;
+    rdfs:label "Electronic mail address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Address of the electronic mailbox of the responsible party"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/agentterms/fax> a rdf:Property ;
+    rdfs:label "Facsimilie number"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Telephone number(s) of a facsimile machine for the responsible party."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/agentterms/localityName> a rdf:Property ;
+    rdfs:label "Locality name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "City, suburb, town or other locality of the postal address"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/personalName> a rdf:Property ;
+    rdfs:label "Personal name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Name of the responsible person"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/physicalAddress> a rdf:Property ;
+    rdfs:label "Physical address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Physical location of the responsible party."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/positionName> a rdf:Property ;
+    rdfs:label "Position name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Position of the responsible person"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/postalAddress> a rdf:Property ;
+    rdfs:label "Postal address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Address line for the postal address."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/postcode> a rdf:Property ;
+    rdfs:label "Postcode"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Postal code of the postal address"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/role> a rdf:Property ;
+    rdfs:label "Role"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Function performed by the responsible party in relation to the described resource."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/sector> a rdf:Property ;
+    rdfs:label "Sector"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Sector of the agent."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/stateTerritory> a rdf:Property ;
+    rdfs:label "State or Territory"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "State or Territory of the address."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> .
+
+<http://www.agls.gov.au/agls/agentterms/telephone> a rdf:Property ;
+    rdfs:label "Telephone number"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Telephone number(s) at which the responsible party may be contacted."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/agentterms/web> a rdf:Property ;
+    rdfs:label "Website location"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Location (address) for online access using a Uniform Resource Indicator."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/agentterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/agentterms/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The Agent Metadata Terms Namespace provides URIs for the Agent Metadata Terms Vocabulary. Vocabulary terms are declared using RDF Schema language to support RDF applications. The AGLS Metadata Terms form a richer vocabulary, which is intended to facilitate discovery of resources. It will be updated according to AGLS Working Group decisions."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2009" ;
+    dc:title "The Agent Metadata Terms Namespace providing access to its content by means of an RDF Schema."@en-AU ;
+    dcterms:created "2009-02-02" ;
+    dcterms:modified "2010-06-30" .

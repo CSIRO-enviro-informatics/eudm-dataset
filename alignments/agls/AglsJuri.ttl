@@ -1,0 +1,408 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/AAT> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "AAT" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the Australian Antarctic Territory." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/ACT> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "ACT" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the Australian Capital Territory." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/AU> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "AU" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the Australian Commonwealth jurisdiction." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/AustralianAntarcticTerritory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Antarctic Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Australia's Antarctic territory, including Heard and McDonald Islands." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/AustralianCapitalTerritory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Capital Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The seat of government in Australia. Defined by Seat of Government Surrender Act 1909 (NSW)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Australian_Antarctic_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Antarctic Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Australia's Antarctic territory, including Heard and McDonald Islands." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Australian_Capital_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Capital Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The seat of government in Australia. Defined by Seat of Government Surrender Act 1909 (NSW)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Commonwealth_of_Australia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Commonwealth of Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The Australian Commonwealth jurisdiction." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/CommonwealthofAustralia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Commonwealth of Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The Australian Commonwealth jurisdiction." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/IOT> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "IOT" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for Australia's Indian Ocean Territories." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/IndianOceanTerritories> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Indian Ocean Territories" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Australia's Indian Ocean Territories: Cocos (Keeling) Island and Christmas Island." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Indian_Ocean_Territories> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Indian Ocean Territories" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Australia's Indian Ocean Territories: Cocos (Keeling) Island and Christmas Island." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NF> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "NI" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the territory of Norfolk Island." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NI> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "NI" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the territory of Norfolk Island." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NSW> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "NSW" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of New South Wales." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NT> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "NT" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the Northern Territory." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NewSouthWales> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "New South Wales" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state of New South Wales, defined by: Governor Phillip's Instructions 25 April 1787 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/New_South_Wales> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "New South Wales" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state of New South Wales, defined by: Governor Phillip's Instructions 25 April 1787 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NorfolkIsland> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Norfolk Island" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The territory of Norfolk Island, defined in Schedule 1 of Norfolk Island Act 1979 (Cth)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Norfolk_Island> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Norfolk Island" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The territory of Norfolk Island, defined in Schedule 1 of Norfolk Island Act 1979 (Cth)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/NorthernTerritory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Northern Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The territory defined by: Letters Patent annexing the Northern Territory to South Australia 1863 (UK); Northern Territory Act of 1863 (SA); Northern Territory Surrender Act 1908 (SA)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Northern_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Northern Territory" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The territory defined by: Letters Patent annexing the Northern Territory to South Australia 1863 (UK); Northern Territory Act of 1863 (SA); Northern Territory Surrender Act 1908 (SA)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Other> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Other" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Any other political or administrative entity not specifically named in this schema." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/QLD> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "QLD" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Queensland." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Qld> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "QLD" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Queensland." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Queensland> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Queensland" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: Letters Patent erecting the Colony of Queensland 1859 (UK); Letters Patent altering the western boundary of Queensland 1862 (UK); Queensland Coast Islands Act 1879 (Qld); Letters Patent erecting the Colony of Queensland 1859 (UK); Letters Patent altering the western boundary of Queensland 1862 (UK); Queensland Coast Islands Act 1879 (Qld)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/SA> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "SA" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of South Australia." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/SouthAustralia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "South Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: South Australian Act (Foundation Act) 1834 (UK); Letters Patent establishing the Province of South Australia 19 February 1836 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/South_Australia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "South Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: South Australian Act (Foundation Act) 1834 (UK); Letters Patent establishing the Province of South Australia 19 February 1836 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/TAS> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "TAS" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Tasmania." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Tas> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "TAS" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Tasmania." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Tasmania> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Tasmania" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: Order In Council Separating Van Diemen's Land From New South Wales 1825 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/VIC> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "VIC" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Victoria." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Vic> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "VIC" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Victoria." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Victoria> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Victoria" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: General Instructions to the Superintendent of Port Phillip, 1839." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/WA> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "WA" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Abbreviation for the state of Western Australia." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/WesternAustralia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Western Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: Letters Patent re Constitution 25 August 1890 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Western_Australia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Western Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The state defined by: Letters Patent re Constitution 25 August 1890 (UK)." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .
+
+agls:AglsJuri dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Jurisdiction Vocabulary Encoding Scheme provides a general list of jurisdiction names that can be used for describing jurisdictions in the jurisdiction property of the Coverage element or in the AglsAgent and AglsAvail schemes."@en-AU ;
+    dc:language "English"@en-AU ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Jurisdiction Vocabulary Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2010-06-30" .
+
+<http://www.agls.gov.au/agls/terms/AglsJuri/Australia> a agls:,
+        rdfs:Property ;
+    rdfs:label "Australia" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsJuri/> ;
+    dcterms:issued "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The Australian Commonwealth jurisdiction." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsJuri/> .

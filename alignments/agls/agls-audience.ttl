@@ -1,0 +1,418 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Aboriginal_and_Torres_Strait_Islanders> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Aboriginal and Torres Strait Islanders" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "People who identify themselves as part of the Indigenous Australian community." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Australian_Antarctic_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Antarctic Territory" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in the Australian Antarctic Territory." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Australian_Capital_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australian Capital Territory" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in the Australian Capital Territory." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Australians_overseas> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Australians overseas" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Citizens of Australia living, working or travelling overseas." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Indian_Ocean_Territories> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Indian Ocean Territories" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in the Indian Ocean Territories." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/New_South_Wales> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "New South Wales" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in New South Wales." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Norfolk_Island> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Norfolk Island" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in Norfolk Island." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Northern_Territory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Northern Territory" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in the Northern Territory." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Queensland> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Queensland" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in Queensland." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/South_Australia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "South Australia" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in South Australia." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Tasmania> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Tasmania" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in Tasmania." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Victoria> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Victoria" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in Victoria." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/Western_Australia> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Western Australia" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in Western Australia." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/all> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "All" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "A default value that can (and usually should) be omitted. The general public; the whole population." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/business> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Business" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons or corporations engaged in commerce, trade or industry." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/carers> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Carers" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons or organisations engaged in the care of others (eg patients, children, elderly, disabled). Use 'parents' for resources aimed at mothers, fathers or legal guardians." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/children> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Children" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons under the age of 16 years. Use 'youth' for resources aimed persons aged 16-25 years. Use 'all' for resourced aimed persons aged over 25 years who do not fall into any of the other audience groups." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/community_groups> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Community Groups" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Groups who provide services to, or represent the views of, specific community sectors." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/employees> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Employees" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons working for another person or business for pay. Use 'jobseekers' for resources designed to assist people seeking employment." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/funding_applicants> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Funding applicants" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons, organisations or businesses seeking funding from Government grant or other financial assistance programs." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/gay_and_lesbian> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Gay and Lesbian" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons who identify themselves as part of homosexual community." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/government> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Government" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Agencies and organisations associated with public administration at local, state or federal level." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/jobseekers> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Jobseekers" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons seeking employment, whether currently employed or unemployed. Use 'employees' for resources of relevance to people already in employment." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/low_income_earners> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Low income earners" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "As determined by the Australian Taxation Office, persons whose annual income is less than $28,980 (current at 2007-07-01)." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/media> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Media" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Organisations that by means as radio, television, newspapers, magazines, Internet, etc reach large numbers of people." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/men> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Men" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Adult male persons." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/migrants> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Migrants" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons moving permanently from one country to another, either from Australia overseas, or from other countries to Australia. Includes resources for people from non-English-speaking backgrounds or who have English as a second language." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/non-Australians> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Non-Australians" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons not citizens of or resident in Australia. Use 'Australians overseas' for Australian citizens not resident in Australia." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/non-government_organisations> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Non-government organisations" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Organisations not established by government, especially those involved in non-profit charitable, development, environmental or relief programs. Use 'business' for organisations engaged in for-profit activities." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/parents> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Parents" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons fulfilling a mother, father or guardian role in the care of children, whether by birth, adoption or other legal arrangement." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/people_with_disabilities> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "People with disabilities" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons with a physical or mental incapacity, either permanent or temporary." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/primary_industry> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Primary Industry" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons or organisations involved in the growing, producing or extracting of natural resources. (For example: farming, forestry, mining.) Use 'rural' for resources aimed at people and communities outside urban areas." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/rural> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Rural" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons living or working in regional, country or isolated areas of Australia. Use 'primary industry' for resources on commercial activities that may occur in rural areas." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/seniors> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Seniors" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons over the age of 65 years." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/students> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Students" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons engaged in a course of study or instruction whether at pre-primary, primary, secondary, vocational or tertiary level, full-time or part-time." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/teachers> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Teachers" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Members of the teaching profession, persons instructing students at pre-primary, primary, secondary, vocational or tertiary level." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/tourists> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Tourists" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons visiting an area for pleasure, either from other countries or other parts of Australia. Use 'migrants' for persons relocating permanently." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/veterans> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Veterans" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2007-12-12" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "As defined in the Veterans' Entitlements Act 1986 (Cth), persons taken to have rendered eligible war service." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/women> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Women" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Adult female persons." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http:/www.agls.gov.au/agls/terms/agls-audience/youth> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Youth" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-audience/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Persons aged 16-25 years. Use 'children' for resources aimed at persons under the age of 16 years. Use 'all' for resources aimed at persons aged over 25 years who do not fall into any of the other audience groups." ;
+    rdfs:isDefinedBy <http://purl.org/dc/terms/audience/> ;
+    rdfs:seeAlso <http:/www.agls.gov.au/documents/schemes/agls-audience> .
+
+<http://www.agls.gov.au/agls/terms/agls-audience/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Audience Vocabulary Encoding Scheme provides a general list of terms that can be used for describing audiences for the AGLS Audience element."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Audience Vocabulary Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2010-06-30" .

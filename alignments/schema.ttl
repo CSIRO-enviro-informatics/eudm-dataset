@@ -1,0 +1,5 @@
+# Alignment of the EUDM profile with schema.org inherits from DCAT 1.1 <-> schema.org
+# alignment due to EUDM Profile's profiling of DCAT 1.1
+
+# see https://github.com/w3c/dxwg/blob/gh-pages/dcat/rdf/schema.ttl for current
+# version of DCAT 1.1 <-> schema.org alignment

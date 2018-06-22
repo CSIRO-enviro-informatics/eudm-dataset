@@ -1,0 +1,308 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/application> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Application" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make formal written requests of a general nature, which cannot be more specifically described by a term from the agls-service list. For some types of applications (for example: 'grants') a more specific service type may be listed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/benefits_and_entitlements> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Benefits and entitlements" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to apply for payments, allowances or concessions to which he/she has a right, usually as a result of personal circumstance (for example: unemployment, age, family benefits). See also 'claims' and 'grants'. For other aspects of benefits and entitlements, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries', 'financial'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/bills_rates_levies> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Bills rates and levies" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to pay accounts, taxes or other charges. See also 'orders and purchases' and 'infringements and fines'. For other aspects of bills, rates and levies, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries', 'refunds'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/bonds> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Bonds" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to pay sums of money, to be held in trust and paid in default of an agreement, contract or obligation. For other aspects of bonds, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries', 'refunds'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/bookings_and_reservations> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Bookings and reservations" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make (or cancel) engagements or secure places or objects in advance, for use at a later date. See also 'enrolments'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/business_advisory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Business advisory" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make formal requests for professional advice on business matters, such as enquiries on the setting up of a small business." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/certificates> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Certificates" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to request formal written statements of fact, endorsement or accreditation. (For example: educational qualification, statement of attainment, birth certificate, certificate of registration.) See also 'licences and permits' and 'registrations'. " ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/claims> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Claims" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make assertions or demands for the recognition of a right or due, usually in response to an event or activity (for example: title, insurance, taxation, compensation claims). See also 'benefits and entitlements', 'complaints and appeals' and 'refunds'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/communications_forum> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Communications forum" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource is a setting designed exclusively for interactive involvement with one or more users.  (For example: chat services, listservs, virtual reality, multimedia learning objects.) " ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/complaints_and_appeals> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Complaints and appeals" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to submit formal expressions of discontent, grievance or alleged offences. Includes requests for review of a decision or settlement. See also 'claims' and 'lodgements'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/data_exchange> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Data exchange" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to undertake electronic reporting, transfer or sharing of information." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/enquiries> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Enquiries" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to submit questions and requests for advice and information. For some types of enquiries (for example: 'business advisory') a more specific service type may be listed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/enrolments> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Enrolments" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to register in a scheme or program, for a conference or course of study etc." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/financial> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Financial" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to undertake transactions relating to money or commercial matters. For some types of financial services (for example: 'bills, rates and levies') a more specific service type may be listed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/grants> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Grants" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to apply for sums of money or other resources bestowed upon approved individuals or institutions. Includes scholarships, endowments, awards and similar types of funding. For other aspects of grants, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/infringements_and_fines> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Infringements and fines" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to pay charges and other penalties imposed for breaches or violations of obligations, laws and other codes. For other aspects of infringements and fines, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries', 'refunds'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/legal_advisory> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Legal advisory" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make formal requests for professional advice or legal opinions." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/licenses_and_permits> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Licenses and permits" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to apply for written orders or formal consent to do, or be exempt from, an activity. (For example: driving a car, owning a dog, tax exemption.) Includes authorisations and approvals. For other aspects of licences and permits, use another service type from the list where available. (For example:  'complaints and appeals', 'enquiries', 'renewals'.) See also 'certificates' and 'registrations'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/lodgements> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "lodgements" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make formal statements or submissions to a court, tribunal, commission, inquiry or similar body. See also 'complaints and appeals'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/orders_and_purchases> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Orders and purchases" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to make requests and/or payments for the delivery of goods or services. See also 'subscriptions'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/refunds> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Refunds" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to request reimbursements or compensation for non-supply of goods or services, or for supply of faulty goods or services. See also 'claims' and 'complaints and appeals'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/registrations> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Registrations" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to have recorded, acts, occurrences or items (for example: motor vehicles, letters posted, marriages, businesses). For registrations of participants in a scheme, program, conference or course, use 'enrolments'.  For registrations by a board (or similar) authorising an activity, use 'licences and permits'. For formal statements that prove registration, use 'certificates'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/renewals> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Renewals" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to request that provision of an item or benefit be recommenced, or made effective for an additional period." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/subscription> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Subscription" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to request the provision of a service for a designated period of time, often in return for payment of a fee. (For example: membership of a group, shares, periodicals.) See also 'renewals'." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/technical> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Technical" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows clients to access specialised services of a scientific, industrial or mechanical nature, for which a more specific service type is not listed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/tenders> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Tenders" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The resource allows providers to submit formal offers to supply goods or services with a stated price and terms. Includes bids, offers, proposals and estimates." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/testing> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Testing" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Services that examine, investigate, analyse or check the performance or capabilities of an individual, object or system using a standardised evaluation procedure." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/training> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Training" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Services that provide instruction or practice, designed to impart proficiency or improve efficiency. For other aspects of training, use another service type from the list where available. (For example:  'certificates', 'enquiries', 'enrolments'.)" ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service/transactions> a rdfs:Class,
+        rdfs:Property ;
+    rdfs:label "Transactions" ;
+    dcam:memberOf <http:/www.agls.gov.au/agls/terms/agls-service/> ;
+    dcterms:issued "2001-11-20" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Any online service and/or assistance that functions as an intermediary between the user and online data and information, for which a more specific service type is not listed." ;
+    rdfs:isDefinedBy <http:/www.agls.gov.au/agls/terms/serviceType/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/agls-service/> .
+
+<http:/www.agls.gov.au/agls/terms/agls-service> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Service Vocabulary Encoding Scheme provides a general list of terms that can be used for describing service types for the serviceType refinement for the Type element."@en-AU ;
+    dc:language "English"@en-AU ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Service Vocabulary Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-20" ;
+    dcterms:modified "2010-06-30" .

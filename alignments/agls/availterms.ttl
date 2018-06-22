@@ -1,0 +1,176 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/availterms/corporateName> a rdf:Property ;
+    rdfs:label "Corporate Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Name of the responsible corporation or organisation."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/cost> a rdf:Property ;
+    rdfs:label "Cost"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Cost of obtaining the resource."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/country> a rdf:Property ;
+    rdfs:label "Country"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Country of the physical address"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/email> a rdf:Property ;
+    rdfs:label "Electronic mail address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Address of the electronic mailbox of the responsible party"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/fax> a rdf:Property ;
+    rdfs:label "Facsimilie number"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Telephone number(s) of a facsimile machine for the responsible party."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/hours> a rdf:Property ;
+    rdfs:label "Hours of service"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Time period (including time zone) when individuals can contact the responsible party."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/instructions> a rdf:Property ;
+    rdfs:label "Instructions"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Supplemental instructions about accessing the resource."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/localityName> a rdf:Property ;
+    rdfs:label "Locality Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "City, suburb, town or other locality of the address."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/personalName> a rdf:Property ;
+    rdfs:label "Personal Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Name of the responsible person."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/physicalAccess> a rdf:Property ;
+    rdfs:label "Physical Access"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Information about physical access to premises and services for people with disabilities."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/physicalAddress> a rdf:Property ;
+    rdfs:label "Physical Address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Address line for the physical location."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/positionName> a rdf:Property ;
+    rdfs:label "Position Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Position of the responsible person"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/postalAddress> a rdf:Property ;
+    rdfs:label "Postal Address"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Postal address of the responsible party"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/postcode> a rdf:Property ;
+    rdfs:label "Postcode"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Postal code of the postal address"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/role> a rdf:Property ;
+    rdfs:label "Role"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Function performed by the responsible party in relation to the described resource."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/sector> a rdf:Property ;
+    rdfs:label "Sector"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Sector of the responsible party."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/stateTerritory> a rdf:Property ;
+    rdfs:label "State or Territory"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "State or Territory of the address."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> .
+
+<http://www.agls.gov.au/agls/availterms/telephone> a rdf:Property ;
+    rdfs:label "Telephone number"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Telephone number(s) at which the responsible party may be contacted."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/web> a rdf:Property ;
+    rdfs:label "Website location"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Location (address) for online access using a Uniform Resource Indicator."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/availterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/availterms/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The Availability Metadata Terms Namespace provides URIs for the Availability Metadata Terms Vocabulary. Vocabulary terms are declared using RDF Schema language to support RDF applications. The AGLS Metadata Terms form a richer vocabulary, which is intended to facilitate discovery of resources. It will be updated according to AGLS Working Group decisions."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2009" ;
+    dc:title "The Availability Metadata Terms Namespace providing access to its content by means of an RDF Schema."@en-AU ;
+    dcterms:created "2009-02-02" ;
+    dcterms:modified "2010-06-30" .

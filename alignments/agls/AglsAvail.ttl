@@ -1,0 +1,100 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/address> a rdfs:Property ;
+    rdfs:label "Address" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Street or postal address for the person or organisation making the resource available or providing access." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/contact> a rdfs:Property ;
+    rdfs:label "Contact" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Contact details for the person or organisation making the resource available or providing access. Can include an official title. Typically includes a phone number." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/corporateName> a rdfs:Property ;
+    rdfs:label "Corporate Name" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The name of an organisation making the resource available or providing access to the resource." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/cost> a rdfs:Property ;
+    rdfs:label "Cost" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "Indicates the cost of obtaining the resource or access to the resource." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/email> a rdfs:Property ;
+    rdfs:label "Email" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "An email address for the person or organisation making ghe resource available or providing access." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/hours> a rdfs:Property ;
+    rdfs:label "Hours" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The hours during which access to the resource or contact person can occur." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/jurisdiction> a rdfs:Property ;
+    rdfs:label "Jurisdiction" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The legal jurisdiction of the organisation making the resource available or providing access. NB values for this component must be drawn from the AGLS Jurisdiction controlled list." ;
+    rdfs:domain dcterms:Jurisdiction ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/personalName> a rdfs:Property ;
+    rdfs:label "Personal Name" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2008-01-22" ;
+    rdfs:comment "The name of a person making the resource available or providing access to the resource." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/postcode> a rdfs:Property ;
+    rdfs:label "Postcode" ;
+    dcam:memberOf <http://www.agls.gov.au/agls/terms/AglsAvail/> ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2007-12-19" ;
+    rdfs:comment "The postcode(s) of the locations at which the resource can be accessed, or is made available." ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/terms/availability/> ;
+    rdfs:seeAlso <http://www.agls.gov.au/documents/schemes/AglsAvail/> .
+
+<http://www.agls.gov.au/agls/terms/AglsAvail/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The AGLS Availability Syntax Encoding Scheme is a method for describing characteristics of the availability of offline resources in AGLS metadata descriptions. This schema defines the properties which can be described using the AGLS Availability scheme."@en-AU ;
+    dc:language "English"@en-AU ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2001" ;
+    dc:title "AGLS Availability Syntax Encoding Scheme"@en-AU ;
+    dcterms:created "2001-11-26" ;
+    dcterms:modified "2010-06-30" .

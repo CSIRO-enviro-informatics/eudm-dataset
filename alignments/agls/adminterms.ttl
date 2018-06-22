@@ -1,0 +1,100 @@
+@prefix agls: <http://www.agls.gov.au/agls/terms/> .
+@prefix agls1: <http://www.agls.gov.au/agls/1.2/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.agls.gov.au/agls/adminterms/dateStamp> a rdf:Property ;
+    rdfs:label "Date Stamp"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The date (and optionally time) that the metadata record was created. It is not the date the resource itself was created."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/fileIdentifier> a rdf:Property ;
+    rdfs:label "Metadata File Identifier"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Unique identifier for the metadata record"@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/adminterms/hierarchyLevel> a rdf:Property ;
+    rdfs:label "Metadata Hierarchy Level"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Scope to which the metadata applies."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/hierarchyLevelName> a rdf:Property ;
+    rdfs:label "Metadata Hierarchy Level Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Name of the hierarchy levels for which the metadata is provided."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/metadataCharacterSet> a rdf:Property ;
+    rdfs:label "Metadata Character Set"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The code for the character set used in the metadata record. This property does not describe the character set used within the resource itself."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/metadataContact> a rdf:Property ;
+    rdfs:label "Metadata Contact"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "Details about the individual, organisation and/or position associated with the metadata information. This property does not convey details about the individual, organisation and/or position associated with the resource itself."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> ;
+    rdfs:range rdfs:Literal .
+
+<http://www.agls.gov.au/agls/adminterms/metadataLanguage> a rdf:Property ;
+    rdfs:label "Metadata Language"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The written language used for completing the metadata record. This property does not describe the language used within the resource itself."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/metadataStandardName> a rdf:Property ;
+    rdfs:label "Metadata Standard Name"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The metadata standard followed for creation of the metadata."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/metadataStandardVersion> a rdf:Property ;
+    rdfs:label "Metadata Standard Version"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The version of the metadata standard followed for creation of the metadata."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/metadataUpdateDate> a rdf:Property ;
+    rdfs:label "Metadata Update Date"@en-AU ;
+    dc:type rdf:Property ;
+    dcterms:issued "2009-02-02" ;
+    dcterms:modified "2009-02-02" ;
+    rdfs:comment "The date (and optionally time) that the metadata was last updated or modified. It is not the date the resource itself was last updated or modified."@en-AU ;
+    rdfs:isDefinedBy <http://www.agls.gov.au/agls/adminterms/> .
+
+<http://www.agls.gov.au/agls/adminterms/> dc:creator "National Archives of Australia"@en-AU ;
+    dc:description "The Administrative Metadata Terms Namespace provides URIs for the Administrative Metadata Terms Vocabulary. Vocabulary terms are declared using RDF Schema language to support RDF applications. The AGLS Metadata Terms form a richer vocabulary, which is intended to facilitate discovery of resources. It will be updated according to AGLS Working Group decisions."@en-AU ;
+    dc:language "English" ;
+    dc:publisher "National Archives of Australia"@en-AU ;
+    dc:rights "Copyright Commonwealth of Australia 2009" ;
+    dc:title "The Administrative Metadata Terms Namespace providing access to its content by means of an RDF Schema."@en-AU ;
+    dcterms:created "2009-02-02" ;
+    dcterms:modified "2010-06-30" .
