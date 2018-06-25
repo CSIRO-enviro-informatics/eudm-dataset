@@ -41,6 +41,8 @@
   owl:versionIRI <http://linked.data.gov.au/def/eudm-metadata/1/> ;
   owl:versionInfo "1" ;
 .
+
+# Q: do we really have to have a subclass here as opposed to just dcat:Dataset with SHACL restrictions on it?
 eudm:Dataset
   rdf:type owl:Class ;
   rdfs:comment "A Dataset, according to the EUDM"@en ;
@@ -56,7 +58,14 @@ eudm:Dataset
       owl:minCardinality "1"^^xsd:nonNegativeInteger ;
       owl:onProperty eudm:hasEUDMcategory ;
     ] ;
+    rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onProperty dcat:distribution ;
+      ] ;
 .
+
+# Q: do we really have to have a subclass here as opposed to just dcat:Dataset with SHACL restrictions on it?
 eudm:Distribution
   rdf:type owl:Class ;
   rdfs:label "An EUDM dataset distribution" ;
@@ -72,6 +81,8 @@ eudm:EUDMcategory
   rdfs:label "EUDM Category" ;
   rdfs:subClassOf skos:Concept ;
 .
+
+# Q: can you please use agrif:AGIFTFunction (http://reference.data.gov.au/def/ont/agrif#d4e636)
 eudm:hasAGIFTclassification
   rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dcat:theme ;
@@ -85,13 +96,15 @@ eudm:hasFieldOfResearch
   rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dcat:theme ;
 .
+
+# I don't think we will have such a thing! CC-BY 4.0 in general or other specific license but no general Aust Govt License
 lic:AU-license
   rdf:type owl:Class ;
   rdfs:label "Australian Government Data License" ;
   rdfs:subClassOf odrl:Policy ;
   rdfs:subClassOf [
       rdf:type owl:Restriction ;
-      owl:hasValue <http://test/linked.data.gov.au/license/> ;
+      owl:hasValue <http://test.linked.data.gov.au/license/> ;
       owl:onProperty <http://purl.org/linked-data/registry#register> ;
     ] ;
   rdfs:subClassOf [

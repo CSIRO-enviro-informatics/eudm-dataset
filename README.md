@@ -14,6 +14,25 @@ This ontology contains a range of resources describing a profile of well-known m
   * vocabularies used by this profile. Note that many of the vocabularies references in this profile are managed elsewhere.
 
 
+## Profile model
+The metadata model for EUDM is essentially the [DCAT 2018](https://github.com/w3c/dxwg/tree/gh-pages/dcat) metadata model currently under development by the W3C's [Dataset Exchange Working Group](https://www.w3.org/2017/dxwg/wiki/Main_Page) with a series of restrictions placed on it that require certain EUDM-specific properties to be used.
+
+Figure 1 shows the basic DCAT classes adapted from the [DCAT vocabulary](https://www.w3.org/TR/vocab-dcat/) diagram.
+
+![](dcat.png)
+Figure 1: This EUDM profile described using the Profile Description Ontology.
+
+Figure 2 shows some of the EUDM-specific restrictions formalised in the [dataset constrains file](model/eudm-dataset-constraints.ttl).
+
+![](eudm-constraints.png)
+Figure 2: Some of the EUDM constraints on DCAT Datasets and related classes.
+
+Figure 3 shows Figure 2 with some explanatory notes in plain English (in red) detailing the requirements EUDM imposes on general DCAT classes and properties.
+
+![](eudm-constraints-annotated.png)
+Figure 3: Figure 2 annotated in plain English.
+
+
 ## Profile Description
 This profile is described using the emerging *Profile Description Ontology* (PROF), currently under development by the [W3C](https://www.w3.org/)'s [Data Exchange Working Group](https://www.w3.org/2017/dxwg/wiki/Main_Page) of which the authors are members.
 
@@ -28,7 +47,7 @@ Within the documentation of PROF is contained this profile's description as an e
 The image of describing this profile is also reproduced below.
 
 ![](eg_eudm.png)
-Figure 1: This EUDM profile described using the Profile Description Ontology.
+Figure 4: This EUDM profile described using the Profile Description Ontology.
 
 
 ## Profile Constraints
