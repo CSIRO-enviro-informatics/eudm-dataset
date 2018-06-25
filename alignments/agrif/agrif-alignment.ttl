@@ -1,0 +1,69 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://linked.data.gov.au/def/eudm/agrif>
+  rdf:type owl:Ontology ;
+  dct:created "2018-06-22"^^xsd:date ;
+  dc:creator "Nicholas Car"^^xsd:string ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  rdfs:comment "This ontology aligns members of the EUDM Profile of the DCAT Ontology with members of the AGRIF Ontology" ;
+  rdfs:label "EUDM Profile-AGRIF alignment" ;
+  owl:imports <http://linked.data.gov.au/def/agrif> ;
+.
+
+#
+# Classes
+#
+dcat:Dataset
+  rdfs:subClassOf agrif:Record ;
+  dct:description "A Dataset is easily seen as a subclass of Record."@en ;
+.
+
+dcat:Distribution
+  rdfs:subClassOf agrif:DigitalArtefact ;
+  dct:description "Distributions are to Datasets as DigitalArtefacts are to Records, however DigitalArtefacts may not always be associated with a Record thus DigitalArtefact is the superclass."@en ;
+.
+
+agrif:Agent
+  rdfs:subClassOf foaf:Agent ;
+  dct:description "AGRIF implements a stand-alone agrif:Agent class which is \"...responsible for the performance of some Activity or Event, including those on Records\" which means it is clearly a subclass of the generic foaf:Agent class used by DCAT. Note that agrif:Organisation & agrif:Person, subclasses of agrif:Agent have not independent alignment for DCAT given that DCAt only implements foaf:Agent."@en ;
+.
+
+dcat:Catalog
+  rdfs:subClassOf agrif:InformationSystem ;
+  dct:description "AGRIF doesn't specifically mention a Catalog but clearly what DCAT calls a Catalog is a subclass of AGRIF's InformationSystem."@en ;
+.
+
+
+#
+# Properties
+#
+
+# 
+# agrif:Creator (Role)
+#
+# agrif:DigitalArtefact
+#   storedIn (InformationSystem)
+#   filesize
+#   format
+#
+#   filename?
+#
+#
+#
+# agrif:AGIFTFunction -> dcat:theme
+#
+# agrif:hasAgent
+# agrif:hasCalssifier
+# agrif:hasLocation?
+# agrif:recordOf? (Distribution / Dataset?)
+# agrif:replaces (PROV alignment entailment check for wasRevisionOf)
+# agrif:hasSeries
+# agrif:hasVersionHistory -> Bundle?
