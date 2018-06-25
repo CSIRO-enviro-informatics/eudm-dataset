@@ -6,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
 <http://linked.data.gov.au/def/eudm/agrif>
@@ -41,29 +42,58 @@ dcat:Catalog
   dct:description "AGRIF doesn't specifically mention a Catalog but clearly what DCAT calls a Catalog is a subclass of AGRIF's InformationSystem."@en ;
 .
 
+agrif:AGIFTFunction
+  rdfs:subClassOf skos:Concept ;
+  dct:description "All AGIFT terms are presented as instances of skos:Concepts in the vocabulary https://data.naa.gov.au/def/agift"@en ;
+.
+
+agrif:Event
+  rdfs:subClassOf prov:InstantaneousEvent ;
+  dct:description "AGRIF wording is nearly identical to PROV. This mapping is included (to PROV not DCAT) in order to facilitate inferencing about other events taht might impace DCAT constructs."@en ;
+.
+
+# Status is not handled but should be if we use ADMS for lifecycle management
+
+agrif:VersionHistory
+  rdfs:subClassOf prov:Bundle ;
+    dct:description "A prov:Bundle is a \"a named set of provenance descriptions\"."@en ;
 
 #
 # Properties
 #
+dct:format
+  owl:equivalentProperty agrif:format ;
+  dct:description "AGRIF's format is defined precicely the same as Dublin Core Terms'."@en ;
+.
 
-# 
-# agrif:Creator (Role)
-#
-# agrif:DigitalArtefact
-#   storedIn (InformationSystem)
-#   filesize
-#   format
-#
-#   filename?
-#
-#
-#
-# agrif:AGIFTFunction -> dcat:theme
-#
-# agrif:hasAgent
-# agrif:hasCalssifier
-# agrif:hasLocation?
-# agrif:recordOf? (Distribution / Dataset?)
-# agrif:replaces (PROV alignment entailment check for wasRevisionOf)
-# agrif:hasSeries
-# agrif:hasVersionHistory -> Bundle?
+dcat:byteSize
+  rdfs:subPropertyOf agrif:filesize ;
+  dct:description "AGRIF's filesize property is clearly similar to dcat:byteSize but the units of measure (bytes v. kiloBytes) are not given."@en ;
+.
+
+# agrif:hasClassifier ?
+
+agrif:hasAgent
+  skos:narrower prov:agent ;
+  dct:description "Since there are no domain or range values for agift:agent, it is unwise to create an inferencing-enabling alignment so SKOS conceptual alignment is used here not RDFS or OWL constructs."@en ;
+.
+
+agrif:hasLocation
+  rdfs:subPropertyOf prov:atLocation ;
+  dct:description "This alignment is to PROV, not DCAT, as DCAT has no property to indicate location (spatial or otherwise) of a resource."@en ;
+.
+
+dcat:distribution
+  rdfs:subPropertyOf agrif:recordOf ;
+  dct:description "This matches the modelling of Record/Dataset and DigitalArtefact/Distribution"@en ;
+.
+
+agrif:hasActivity
+  rdfs:subPropertyOf prov:used ;
+  dct:description "The AGRIF property has no domain or range but usage notes indicate that it is between an Activty and a Record used by it thus, if taken as requirements, domains & range are narrow compared with prov:used."@en ;
+.
+
+agrif:hasAgent
+  rdfs:subPropertyOf prov:agent ;
+  dct:description "The AGRIF property is narrower as it's only to be used through Associations."@en ;
+.

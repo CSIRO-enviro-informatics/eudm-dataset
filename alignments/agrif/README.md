@@ -4,3 +4,7 @@ This folder contains an RDF file mapping the profile of DCAT used by EUDM to the
 * [agrif-alignment.ttl](agrif-alignment.ttl)
 
 Explanatory notes for each class and property alignment are given in the RDF file.
+
+It also contains an SPARQL file that CONSTRUCTS more complex mappings:
+
+* [agrif-queries.sparql](agrif-queries.sparql)

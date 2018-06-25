@@ -1,0 +1,32 @@
+#
+# These CONSTRUCT queries are given when direct class/object/axiomes cannot be declared (by Nick at least)
+#
+
+# DCT dct:creator -> AGRIF agrif:Agent with agrif:Creator agrif:Role
+PREFIX dct:   <http://reference.data.gov.au/def/ont/agrif#>
+PREFIX agrif: <http://purl.org/dc/terms/>
+PREFIX prov:  <http://www.w3.org/ns/prov#>
+CONSTRUCT {
+  ?dataset a agrif:Record ;
+    agrif:qualifiedAssociation [
+      a agrif:Association ;
+      agrif:hasAgent ?agent ;
+      agrif:associatedRole agrif:Creator ;
+    ] ;
+} WHERE {
+  ?dataset dct:creator ?agent .
+}
+
+# ReplaceEvent is currently unhandled
+
+# Record -> Record replacement
+CONSTRUCT {
+  ?input_activity prov:wasInvalidatedBy [
+    a prov:Activity;
+    prov:generated ?output_record ;
+  ]
+} WHERE {
+  { ?output_record agrif:replaces ?input_record . }
+  UNION
+  { ?input_record agrif:replacedBy ?output_record . }
+}
