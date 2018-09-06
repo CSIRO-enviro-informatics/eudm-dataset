@@ -1,0 +1,153 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b10",
+    "description" : "at least one prohibition",
+    "sh:minCount" : 1,
+    "path" : "odrl:prohibition"
+  }, {
+    "@id" : "_:b2",
+    "description" : "at least one obligation",
+    "sh:minCount" : 1,
+    "path" : "odrl:obligation"
+  }, {
+    "@id" : "_:b3",
+    "description" : "Must be a member of the AU License register",
+    "hasValue" : "http://test/linked.data.gov.au/license/",
+    "name" : "register",
+    "path" : "http://purl.org/linked-data/registry#register"
+  }, {
+    "@id" : "_:b4",
+    "class" : "http://test.linked.data.gov.au/license/AU-license",
+    "description" : "at least one policy",
+    "sh:minCount" : 1,
+    "name" : "has policy",
+    "nodeKind" : "sh:BlankNodeOrIRI",
+    "path" : "odrl:hasPolicy"
+  }, {
+    "@id" : "_:b5",
+    "description" : "at least one permission",
+    "sh:minCount" : 1,
+    "path" : "odrl:permission"
+  }, {
+    "@id" : "_:b6",
+    "description" : "Must have a title",
+    "sh:maxCount" : 1,
+    "sh:minCount" : 1,
+    "name" : "title",
+    "path" : "dct:title"
+  }, {
+    "@id" : "_:b7",
+    "class" : "http://linked.data.gov.au/def/eudm-dataset#EUDMcategory",
+    "description" : "Must be classified/tagged with at least one EUDM category",
+    "sh:minCount" : 1,
+    "name" : "has EUDM category",
+    "nodeKind" : "sh:BlankNodeOrIRI",
+    "path" : "http://linked.data.gov.au/def/eudm-dataset#hasEUDMcategory"
+  }, {
+    "@id" : "_:b8",
+    "class" : "http://test.linked.data.gov.au/license/AU-permission",
+    "description" : "Must have an AU-government permission",
+    "sh:minCount" : 1,
+    "name" : "permission",
+    "path" : "odrl:permission"
+  }, {
+    "@id" : "http://linked.data.gov.au/def/eudm-dataset-constraints",
+    "@type" : "owl:Ontology",
+    "imports" : [ "http://linked.data.gov.au/def/eudm-dataset", "http://datashapes.org/dash" ],
+    "versionInfo" : "Created with TopBraid Composer"
+  }, {
+    "@id" : "eudm-dataset-constraints:DatasetShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM dataset",
+    "property" : [ "_:b6", "_:b7" ],
+    "targetClass" : "http://linked.data.gov.au/def/eudm-dataset#Dataset"
+  }, {
+    "@id" : "eudm-dataset-constraints:DistributionShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM dataset distribution",
+    "property" : "_:b4",
+    "targetClass" : "http://linked.data.gov.au/def/eudm-dataset#Distribution"
+  }, {
+    "@id" : "eudm-dataset-constraints:PolicyShape",
+    "@type" : "sh:NodeShape",
+    "label" : "An EUDM policy",
+    "or" : {
+      "@list" : [ "_:b2", "_:b5", "_:b10" ]
+    },
+    "property" : [ "_:b8", "_:b3" ],
+    "targetClass" : "odrl:Policy"
+  } ],
+  "@context" : {
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "hasValue" : {
+      "@id" : "http://www.w3.org/ns/shacl#hasValue",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path",
+      "@type" : "@id"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+      "@type" : "@id"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass",
+      "@type" : "@id"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/shacl#or",
+      "@type" : "@id"
+    },
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "dash" : "http://datashapes.org/dash#",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "odrl" : "http://www.w3.org/ns/odrl/2/",
+    "eudm-dataset-constraints" : "http://linked.data.gov.au/def/eudm-dataset-constraints#"
+  }
+}
