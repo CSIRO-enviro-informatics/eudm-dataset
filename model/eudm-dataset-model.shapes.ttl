@@ -1,0 +1,242 @@
+# baseURI: http://linked.data.gov.au/def/eudm-dataset.shapes
+# imports: http://datashapes.org/dash
+# imports: http://linked.data.gov.au/def/eudm-dataset
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix eudm: <http://linked.data.gov.au/def/eudm-dataset#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix lic: <http://test.linked.data.gov.au/license/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix ssd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eudm:Dataset
+  rdf:type sh:NodeShape ;
+  sh:property eudm:Dataset-bibliographicCitation ;
+  sh:property eudm:Dataset-conformsTo ;
+  sh:property eudm:Dataset-creator ;
+  sh:property eudm:Dataset-description ;
+  sh:property eudm:Dataset-distribution ;
+  sh:property eudm:Dataset-hasEUDMcategory ;
+  sh:property eudm:Dataset-identifier ;
+  sh:property eudm:Dataset-owner ;
+  sh:property eudm:Dataset-page ;
+  sh:property eudm:Dataset-relation ;
+  sh:property eudm:Dataset-spatial ;
+  sh:property eudm:Dataset-subName ;
+  sh:property eudm:Dataset-temporal ;
+  sh:property eudm:Dataset-theme ;
+  sh:property eudm:Dataset-title ;
+  sh:property eudm:Dataset-type ;
+  sh:property [
+      sh:path dcterms:temporal ;
+      sh:qualifiedMaxCount 1 ;
+      sh:qualifiedMinCount 1 ;
+      sh:qualifiedValueShape [
+          sh:class time:ProperInterval ;
+        ] ;
+    ] ;
+.
+eudm:Dataset-bibliographicCitation
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:bibliographicCitation ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-conformsTo
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:conformsTo ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-creator
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:creator ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-description
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:description ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-distribution
+  rdf:type sh:PropertyShape ;
+  sh:path dcat:distribution ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-hasEUDMcategory
+  rdf:type sh:PropertyShape ;
+  sh:path eudm:hasEUDMcategory ;
+  sh:class eudm:EUDMcategory ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-identifier
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:identifier ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-owner
+  rdf:type sh:PropertyShape ;
+  sh:path eudm:owner ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-page
+  rdf:type sh:PropertyShape ;
+  sh:path foaf:page ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-relation
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:relation ;
+  sh:class dcat:Dataset ;
+.
+eudm:Dataset-spatial
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:spatial ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-subName
+  rdf:type sh:PropertyShape ;
+  sh:path eudm:subName ;
+  sh:maxCount 1 ;
+.
+eudm:Dataset-temporal
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:temporal ;
+.
+eudm:Dataset-theme
+  rdf:type sh:PropertyShape ;
+  sh:path dcat:theme ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-title
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:title ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Dataset-type
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:type ;
+  sh:maxCount 1 ;
+  sh:minCount 1 ;
+.
+eudm:Distribution
+  rdf:type sh:NodeShape ;
+  sh:property eudm:Distribution-downloadURL ;
+  sh:property eudm:Distribution-hasPolicy ;
+.
+eudm:Distribution-downloadURL
+  rdf:type sh:PropertyShape ;
+  sh:path dcat:downloadURL ;
+  sh:minCount 1 ;
+.
+eudm:Distribution-hasPolicy
+  rdf:type sh:PropertyShape ;
+  sh:path odrl:hasPolicy ;
+  sh:minCount 1 ;
+.
+<http://linked.data.gov.au/def/eudm-dataset.shapes>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://linked.data.gov.au/def/eudm-dataset> ;
+.
+lic:AU-license
+  rdf:type sh:NodeShape ;
+  sh:property lic:AU-license-permission ;
+  sh:property lic:AU-license-register ;
+  sh:property [
+      sh:path odrl:permission ;
+      sh:qualifiedMinCount 1 ;
+      sh:qualifiedValueShape [
+          sh:class lic:AU-permission ;
+        ] ;
+    ] ;
+.
+lic:AU-license-permission
+  rdf:type sh:PropertyShape ;
+  sh:path odrl:permission ;
+.
+lic:AU-license-register
+  rdf:type sh:PropertyShape ;
+  sh:path reg:register ;
+  sh:hasValue lic: ;
+.
+lic:AU-permission
+  rdf:type sh:NodeShape ;
+  sh:property lic:AU-permission-register ;
+.
+lic:AU-permission-register
+  rdf:type sh:PropertyShape ;
+  sh:path reg:register ;
+  sh:hasValue <http://test/linked.data.gov.au/permission/> ;
+.
+odrl:Policy
+  rdf:type sh:NodeShape ;
+  sh:or (
+      [
+        sh:path odrl:obligation ;
+        sh:description "at least one obligation" ;
+        sh:minCount 1 ;
+      ]
+      [
+        sh:path odrl:permission ;
+        sh:description "at least one permission" ;
+        sh:minCount 1 ;
+      ]
+      [
+        sh:path odrl:prohibition ;
+        sh:description "at least one prohibition" ;
+        sh:minCount 1 ;
+      ]
+    ) ;
+  sh:property [
+      sh:path <http://purl.org/linked-data/registry#register> ;
+      sh:description "Must be a member of the AU License register" ;
+      sh:hasValue <http://test/linked.data.gov.au/license/> ;
+      sh:name "register" ;
+    ] ;
+  sh:property [
+      sh:path odrl:permission ;
+      sh:class <http://test.linked.data.gov.au/license/AU-permission> ;
+      sh:description "Must have an AU-government permission" ;
+      sh:minCount 1 ;
+      sh:name "permission" ;
+    ] ;
+  skos:note "In this version we enforce that at least one rule must be present" ;
+.
