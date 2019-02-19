@@ -6,7 +6,7 @@ This ontology contains a range of resources describing a profile of well-known m
 
 ## Profile repository contents
 * [alignments/](alignments/)
-  * listed and documented alignments of this profile (of DCAT) several other metadata models including [shcmea.org](https://schema.org), [AGRIF](http://reference.data.gov.au/def/ont/agrif) and [AGLS](http://agls.gov.au).
+  * listed and documented alignments of this profile (of DCAT) several other metadata models including [schema.org](https://schema.org), [AGRIF](http://reference.data.gov.au/def/ont/agrif) and [AGLS](http://agls.gov.au).
 * [model/](model/)
   * the metadata model for this profile, including schemas & constraints
   * note the parts of the model are formalised according to PROF (see next section)
